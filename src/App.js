@@ -5,6 +5,7 @@ import {Route,Switch} from "react-router-dom";
 import Landing from "./components/landing";
 import Record from "./components/record";
 import Url from "./components/url";
+import Watch from "./components/firebase";
 
 
 
@@ -17,6 +18,7 @@ function App() {
         SUBLIVE
       </h1>
       <Switch>
+        <Route path ="/watch" component={Watch}/>
         <Route path = "/record" component = {Record}/>
         <Route path = "/url" component = {Url}/>
         <Route exact path = "" component = {Landing}/>
