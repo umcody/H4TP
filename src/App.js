@@ -1,21 +1,27 @@
 import React from 'react';
+import logo from './logo.svg';
+import {Route,Switch} from "react-router-dom";
+import Landing from "./components/landing";
+import Record from "./components/record";
+import Url from "./components/url";
+
+
+
 function App() {
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>
+        SUBLIVE
+      </h1>
+      <Switch>
+        <Route path = "/record" component = {Record}/>
+        <Route path = "/url" component = {Url}/>
+        <Route exact path = "" component = {Landing}/>
+      </Switch>
+      
+    
     </div>
   );
 }
