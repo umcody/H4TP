@@ -10,7 +10,7 @@ function Record() {
   return (
     <div>
       <h3>
-        Allow Your Microphone Upon Popup
+        Allow Your Microphone Upon Pop-up
       </h3>
       <div style ={{marginTop:"30px", justifyContent:"center", display:"flex"}} onClick={onClick}>
         <div style={{position:"absolute"}} className = {isRecording?"recordT":"recordF"}>

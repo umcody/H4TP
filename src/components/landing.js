@@ -7,11 +7,11 @@ function Landing() {
   return (
     <div>
       <h4>
-      Create a live transcript through the tab’s audio
+        Create a live transcript through the microphone's audio
       </h4>
       <div style ={{marginTop:"30px"}}>
-      <Link className = "button"> Watch </Link>
-        <Link to = "/url" className = "button"> Record </Link>
+        <Link className = "button"> Join </Link>
+        <Link to = "/language" className = "button"> Record </Link>
       </div>
     </div>
   );

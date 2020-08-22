@@ -5,6 +5,7 @@ import {Route,Switch} from "react-router-dom";
 import Landing from "./components/landing";
 import Record from "./components/record";
 import Url from "./components/url";
+import Language from "./components/language";
 
 
 
@@ -19,6 +20,7 @@ function App() {
       <Switch>
         <Route path = "/record" component = {Record}/>
         <Route path = "/url" component = {Url}/>
+        <Route path = "/language" component = {Language}/>
         <Route exact path = "" component = {Landing}/>
       </Switch>
       
