@@ -3,7 +3,6 @@ import {Link} from 'react-router-dom';
 import { Dropdown } from 'semantic-ui-react'
 
 function Language() {
-    const [isRecording, setIsRecording] = useState(false);
 
     const countryOptions = [
         { key: 'af', value: 'af', flag: 'af', text: 'English' },

@@ -10,8 +10,8 @@ function Landing() {
         Create a live transcript through the microphone's audio
       </h4>
       <div style ={{marginTop:"30px"}}>
-        <Link to = "/watch" className = "button"> Watch </Link>
-        <Link to = "/url" className = "button"> Record </Link>
+        <Link to = "/join" className = "button"> Join </Link>
+        <Link to = "/language" className = "button"> Create Transcript </Link>
       </div>
     </div>
   );
