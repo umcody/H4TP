@@ -1,5 +1,8 @@
 import React,{useState} from 'react';
 import {Link} from 'react-router-dom';
+import { Container, Header, List } from "semantic-ui-react";
+import pkg from 'semantic-ui-react/package.json'
+
 
 function Url() {
     const [isRecording, setIsRecording] = useState(false);
@@ -15,7 +18,7 @@ function Url() {
       <h4>
           sublive.com/283d4a91
       </h4>
-      <Link to = "/record" className = "button"> Start </Link>
+      <Link to = "/record" className = "buttonA"> Start </Link>
 
     </div>
   );

@@ -25,7 +25,7 @@ function App() {
         <Route path = "/record" component = {Record}/>
         <Route path = "/url" component = {Url}/>
         <Route path = "/language" component = {Language}/>
-        <Route exact path = "" component = {Landing}/>
+        <Route path = "" component = {Landing}/>
       </Switch>
     </div>
   );

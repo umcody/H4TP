@@ -1,45 +1,51 @@
-import React,{useState} from 'react';
-import {Link} from 'react-router-dom';
-import { Dropdown } from 'semantic-ui-react'
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import { Dropdown } from 'semantic-ui-react';
+import Autocomplete from 'react-autocomplete';
 
 function Language() {
 
-    const countryOptions = [
-        { key: 'af', value: 'af', flag: 'af', text: 'English' },
-        { key: 'ax', value: 'ax', flag: 'ax', text: 'Spanish' },
-        { key: 'al', value: 'al', flag: 'al', text: 'Chinese' },
-        { key: 'dz', value: 'dz', flag: 'dz', text: 'Korean' },
-        { key: 'as', value: 'as', flag: 'as', text: 'French' },
-        { key: 'ad', value: 'ad', flag: 'ad', text: 'Hindi' },
-        { key: 'ad', value: 'ad', flag: 'ad', text: 'Arabic' },
-      ]
-      
-      const DropdownExampleSearchSelection = () => (
-        <Dropdown
-          placeholder='Select Language'
-          fluid
-          search
-          selection
-          options={countryOptions}
-        />
-      )
 
-  return (
-    <div>
-      <h3>
-        Choose a Language
-      </h3>
-      <Dropdown
-          placeholder='Select Language'
-          fluid
-          search
-          selection
-          options={countryOptions}
-        />
-      <Link to = "/url" className = "button"> Continue </Link>
+    const languageOptions = [
+        { key: 'Chinese', text: 'Chinese', value: 'Chinese' },
+        { key: 'Dutch', text: 'Dutch', value: 'Dutch' },
+        { key: 'English', text: 'English', value: 'English' },
+    ]
+    const [value,setValue] = useState();
 
-    </div>
-  );
+
+    function onClick(event) {
+        setIsRecording(!isRecording);
+    }
+    return (
+        <div className="languageCon">
+            <h4>Choose Your Language</h4>
+            <div style={{position:"relative"}}>
+            <Autocomplete
+                getItemValue={(item) => item.label}
+                items={[
+                    { label: 'English' },
+                    { label: 'Spanish' },
+                    { label: 'Chinese' },
+                    { label: 'Dutch' },
+                    { label: 'Korea' },
+                    { label: 'French' },
+                    { label: 'Polish' }
+                ]}
+                renderItem={(item, isHighlighted) =>
+                    <div style={{ background: isHighlighted ? 'lightgray' : 'white' }}>
+                        {item.label}
+                    </div>
+                }
+                value={value}
+                onChange={(e) => setValue(e.target.value)}
+                onSelect={(val) => setValue(val)}
+            />
+            </div>
+                        <Link to= "/url" className="buttonA">Generate Link</Link>
+
+        </div>
+    );
 }
 
 export default Language;

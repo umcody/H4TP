@@ -1,0 +1,13 @@
+.select-search__select{
+    border:black 1px solid;
+}
+.languageCon{
+    margin-top: 10px;
+}
+.languageCon >*{
+    margin-top:10px;
+    text-align:center;
+}
+.dropdown{
+    margin-top:10px;
+}
