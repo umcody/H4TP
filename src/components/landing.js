@@ -11,7 +11,7 @@ function Landing() {
       </h4>
       <div style ={{marginTop:"30px"}}>
         <Link to = "/watch" className = "buttonA"> Join </Link>
-        <Link to = "/language" className = "buttonA"> Present </Link>
+        <Link to = "/language" className = "buttonA"> Create </Link>
       </div>
     </div>
   );

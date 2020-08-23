@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import { Dropdown } from 'semantic-ui-react';
 import Autocomplete from 'react-autocomplete';
 
-function Record() {
-    const [isRecording, setIsRecording] = useState(false);
+function Language() {
+
 
     const languageOptions = [
         { key: 'Chinese', text: 'Chinese', value: 'Chinese' },
@@ -48,4 +48,4 @@ function Record() {
     );
 }
 
-export default Record;
+export default Language;

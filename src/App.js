@@ -7,6 +7,7 @@ import Record from "./components/record";
 import Url from "./components/url";
 import Language from "./components/language";
 import Watch from "./components/firebase";
+import Join from "./components/join";
 
 
 
@@ -20,13 +21,12 @@ function App() {
       </h1>
       <Switch>
         <Route path ="/watch" component={Watch}/>
+        <Route path ="/join" component={Join}/>
         <Route path = "/record" component = {Record}/>
         <Route path = "/url" component = {Url}/>
         <Route path = "/language" component = {Language}/>
         <Route path = "" component = {Landing}/>
       </Switch>
-      
-    
     </div>
   );
 }
